@@ -8,11 +8,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f0f0f0;
+  background-color: #108b96;
 }
 
 .hero {
-  height: 60vh;
+  height: 60dvh;
   background-size: cover;
   background-position: center;
   background-image: url(images/ping21.png);
@@ -33,7 +33,7 @@ body {
 .nav_bar {
   margin: 50px;
   border-radius: 8px;
-  opacity: 0.68;
+  opacity: 0.6;
   background-color: #d1e4e6;
   display: flex;
   align-items: center;
@@ -104,4 +104,44 @@ body {
 
 .image_container button:hover {
   background-color: #ff5722;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 5%;
+}
+
+.footer_left_div {
+  color: #333;
+}
+
+.footer_left_contact {
+  color: #dbfbe0;
+}
+
+.footer_middle_div a {
+  color: #dbfbe0;
+  font-size: xx-large;
+  width: 100%;
+}
+
+.footer_middle_div h4 {
+  color: #333;
+}
+
+.footer_right_div {
+  color: #333;
+}
+
+.footer_right_div p {
+  color: #dbfbe0;
+}
+
+.footer_bottom_div {
+  text-align: center;
+  /* margin-top: 20px; */
+  color: #ff7f50;
 }

@@ -31,13 +31,25 @@ body {
 }
 
 .nav_bar {
-  margin: 50px;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 650px;
+  height: 100px;
+  background-color: #dbfbe0;
   opacity: 0.6;
-  background-color: #d1e4e6;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  border-radius: 200px;
+  z-index: 9;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(5px);
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 }
 
 .nav_bar-list li {
@@ -111,7 +123,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: 5%;
+  padding: 2%;
 }
 
 .footer_left_div {

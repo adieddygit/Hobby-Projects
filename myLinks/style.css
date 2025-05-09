@@ -9,6 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #108b96;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -46,9 +47,7 @@ body {
   right: 0;
   top: 40px;
   border-radius: 200px;
-  z-index: 9;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(5px);
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 }
 
@@ -93,8 +92,13 @@ body {
 .image_container img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.image_container img:hover {
+  transform: scale(2.2);
 }
 
 .image_container p {
@@ -119,41 +123,47 @@ body {
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .footer_left_div {
-  color: #333;
+  color: #00ffff;
 }
 
 .footer_left_contact {
-  color: #dbfbe0;
+  color: #f1f1f1;
 }
 
 .footer_middle_div a {
-  color: #dbfbe0;
+  color: #f1f1f1;
   font-size: xx-large;
-  width: 100%;
+  text-decoration: none;
+}
+
+.footer_middle_div i:hover {
+  transition: transform ease-in 0.3s;
+  transform: scale(1.2);
 }
 
 .footer_middle_div h4 {
-  color: #333;
+  color: #00ffff;
 }
 
 .footer_right_div {
-  color: #333;
+  color: #00ffff;
 }
 
 .footer_right_div p {
-  color: #dbfbe0;
+  color: #f1f1f1;
 }
 
 .footer_bottom_div {
+  position: relative;
+  bottom: 0;
   text-align: center;
-  /* margin-top: 20px; */
+  margin-top: 50px;
   color: #ff7f50;
 }
